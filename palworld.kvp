@@ -14,7 +14,7 @@ App.AdminMethod=STDIO
 App.HasReadableConsole=true
 App.HasWritableConsole=true
 App.DisplayName=Palworld
-App.CommandLineArgs={{$PlatformArgs}} {{$FormattedArgs}}
+App.CommandLineArgs=
 App.WindowsCommandLineArgs=
 App.CommandLineParameterFormat=-{0} "{1}"
 App.CommandLineParameterDelimiter= 
@@ -77,7 +77,7 @@ App.BaseDirectory=./palworld/2394010/
 App.WorkingDir=2394010
 App.ExecutableWin=2394010\
 App.ExecutableLinux=2394010/Pal/Binaries/Linux/Linux/PalServer-Linux-Test
-App.LinuxCommandLineArgs=
+App.LinuxCommandLineArgs=UE_TRUE_SCRIPT_NAME=$(echo \"$0\" | xargs readlink -f) UE_PROJECT_ROOT=$(dirname "$UE_TRUE_SCRIPT_NAME") chmod +x "$UE_PROJECT_ROOT/Pal/Binaries/Linux/PalServer-Linux-Test" "$UE_PROJECT_ROOT/Pal/Binaries/Linux/PalServer-Linux-Test" Pal "$@" 
 App.Ports=@IncludeJson[palworldports.json]
 App.UpdateSources=@IncludeJson[palworldupdates.json]
 Errors=
